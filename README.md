@@ -5,6 +5,23 @@ It manages **user profiles**, **default currency settings**, and **monthly budge
 Other microservices consume this data for personalization and financial insights.
 
 ---
+## 📂 Current State (MVP foundation)
+
+- ✅ **Database migration (Flyway)** with `users` and `budgets` tables.
+- ✅ **JPA entities**: `User`, `Budget`.
+- ✅ **Repositories**: `UserRepository`, `BudgetRepository`.
+- ✅ **DTOs** for budget request/response payloads.
+- 🔜 **Service layer** for handling budget creation & queries.
+- 🔜 **Controllers**:
+    - `GET /budgets?month=YYYY-MM`
+    - `POST /budgets`
+    - `GET /internal/budgets-by-user/{userId}?month=YYYY-MM`
+- 🔜 **JWT-based security** (Spring Security Resource Server).
+- 🔜 **OpenAPI/Swagger** documentation.
+- 🔜 **Actuator health/info** endpoints.
+
+
+---
 
 ## 🚀 Tech Stack
 
