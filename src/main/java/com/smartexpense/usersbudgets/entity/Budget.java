@@ -27,7 +27,7 @@ import java.util.UUID;
 public class Budget {
     @Id
     @GeneratedValue
-    private UUID id;
+    private UUID budgetId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
